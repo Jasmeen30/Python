@@ -1,22 +1,57 @@
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+import math
 
-op = input("Enter operation (+, -, *, /): ")
+print("Scientific Calculator")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Square Root")
+print("6. Power")
+print("7. Sine")
+print("8. Cosine")
+print("9. Tangent")
+print("10. Logarithm")
 
-if op == "+":
-    print("Result =", num1 + num2)
+choice = int(input("Enter your choice: "))
 
-elif op == "-":
-    print("Result =", num1 - num2)
+if choice in [1, 2, 3, 4, 6]:
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
 
-elif op == "*":
-    print("Result =", num1 * num2)
+if choice == 1:
+    print("Result =", a + b)
 
-elif op == "/":
-    if num2 != 0:
-        print("Result =", num1 / num2)
-    else:
-        print("Division by zero is not allowed")
+elif choice == 2:
+    print("Result =", a - b)
+
+elif choice == 3:
+    print("Result =", a * b)
+
+elif choice == 4:
+    print("Result =", a / b)
+
+elif choice == 5:
+    n = float(input("Enter a number: "))
+    print("Result =", math.sqrt(n))
+
+elif choice == 6:
+    print("Result =", math.pow(a, b))
+
+elif choice == 7:
+    n = float(input("Enter angle in degrees: "))
+    print("Result =", math.sin(math.radians(n)))
+
+elif choice == 8:
+    n = float(input("Enter angle in degrees: "))
+    print("Result =", math.cos(math.radians(n)))
+
+elif choice == 9:
+    n = float(input("Enter angle in degrees: "))
+    print("Result =", math.tan(math.radians(n)))
+
+elif choice == 10:
+    n = float(input("Enter a number: "))
+    print("Result =", math.log10(n))
 
 else:
-    print("Invalid Operator")
+    print("Invalid Choice")
