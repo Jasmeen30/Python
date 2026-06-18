@@ -51,7 +51,7 @@ def process_students(input_file, output_file):
 
 
 # Main Program
-input_csv = "students.csv"
-output_csv = "results.csv"
+input_csv = "student record/students.csv"
+output_csv = "student record/results.csv"
 
 process_students(input_csv, output_csv)

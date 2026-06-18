@@ -1,6 +1,6 @@
 # Expense Tracker
 
-FILE_NAME = "expenses.txt"
+FILE_NAME = "expense tracker/expenses.txt"
 
 
 def add_expense():

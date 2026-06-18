@@ -1,6 +1,6 @@
 # File Handling in Python - All Modes
 
-filename = "student.txt"
+filename = "practice/student.txt"
 
 # -----------------------------
 # 1. Write Mode (w)
