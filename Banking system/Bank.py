@@ -5,7 +5,7 @@ account_numbers = [1001, 1002, 1003]
 
 # Dictionary to store customer details
 customers = {
-    1001: {"name": "Jasmeen", "balance": 5000},
+    1001: {"name": "Jasmeen", "balance": 500000},
     1002: {"name": "Aman", "balance": 7000},
     1003: {"name": "Simran", "balance": 10000}
 }
